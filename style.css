@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100lvh;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+
+.container {
+  width: 500px;
+  height: 800px;
+  background-color: rgb(255, 255, 255, 0.2);
+  border-radius: 25px;
+  box-shadow: 0px 0px 5px 2px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+  margin-top: 20px;
+  width: 100%;
+  height: 100px;
+}
+
+.input {
+  padding: 5px 10px;
+  height: 60px;
+  border: 2px solid transparent;
+  background-color: transparent;
+  border-bottom: 2px solid black;
+  transition: ease-in-out 0.3s;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.input::placeholder {
+  text-align: center;
+}
+
+.input:focus {
+  border: 2px solid green;
+  outline: none;
+  border-radius: 10px;
+}
+
+.search-icon {
+  font-size: 1.5rem;
+}
+
+.search-button {
+  position: absolute;
+  right: 20px;
+  font-size: 1.5rem;
+  width: 60px;
+  height: 60px;
+  color: white;
+  background-color: rgb(0, 128, 0, 0.5);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: ease-in-out 0.1s;
+}
+
+.search-button:hover {
+  transform: scale(1.2);
+}
+
+.search-button:active {
+  transform: scale(1);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.image-card {
+  width: 60%;
+  margin: 10px;
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px 2px white;
+}
+
+.text-card {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.temperature {
+  font-size: 64px;
+  position: relative;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.temperature span {
+  font-size: 24px;
+  position: absolute;
+  margin-left: 5px;
+}
+
+.details-card {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.humidity,
+.wind {
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.description {
+  text-transform: capitalize;
+}
+
+.bottom-icons {
+  font-size: 1.8rem;
+}
